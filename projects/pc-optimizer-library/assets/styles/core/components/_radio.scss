@@ -1,0 +1,13 @@
+@import "nebular_theme";
+
+$nb-themes: nb-register-theme(
+  (
+    radio-basic-border-color:#919CB1,
+    radio-basic-inner-circle-color:#3C96F7,
+    radio-basic-focus-inner-circle-color: #3C96F7,
+    radio-basic-active-inner-circle-color: #3C96F7,
+    radio-basic-hover-inner-circle-color: #3C96F7,
+  ),
+  default,
+  default
+);

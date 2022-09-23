@@ -1,0 +1,68 @@
+@import "nebular_theme";
+
+$nb-themes: nb-register-theme(
+  (
+    input-basic-text-color: #212942,
+    input-medium-padding: 0.4375rem 1rem,
+    input-medium-text-line-height: 1.5rem,
+    input-medium-text-font-size: 0.9375rem,
+    input-medium-text-font-weight: 600,
+    input-small-placeholder-text-font-size: 10px,
+    input-basic-background-color: #F8F9FE,
+
+  ),
+  default,
+  default
+);
+
+
+[nbInput].status-basic {
+  background-color: #F8F9FE;
+
+  &:not([readonly]):focus {
+    outline: none !important;
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    &:hover{
+      border: none;
+      background-color: #F8F9FE;
+    }
+  }
+  /*
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 100% #F8F9FE inset;
+    box-shadow: 0 0 0px 100% #F8F9FE inset, 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  }
+
+  &:-webkit-autofill:focus{
+    -webkit-box-shadow: 0 0 0px 100% #F8F9FE inset;
+    box-shadow: 0 0 0px 100% #F8F9FE , 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  }*/
+} 
+
+.status-basic:disabled {
+  color: #212942 !important;
+  background-color: #EDEFF2 !important;
+  border-color: #EDEFF2 !important;
+}
+
+.peInput {
+  height: 40px;
+  background-color: #F8F9FE;
+  border: 1px solid #EAE9EF;
+  border-radius: 4px;
+  padding: 10px;
+  color: #212942;
+  font-weight: 600;
+  font-size: 16px;
+
+  &::placeholder {
+    color: #F8F9FE
+  }
+
+  &:focus{
+    outline: none !important;
+    border: 1px solid #719ECE;
+    box-shadow: 2px 0px 10px #719ECE;
+  }
+}

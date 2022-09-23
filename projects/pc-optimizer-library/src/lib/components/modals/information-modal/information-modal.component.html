@@ -1,0 +1,10 @@
+  <div class="peInfoCardModal" *ngIf="model">
+    <div class="peTitleInfoModal">{{model.title}}</div>
+    <div class="peInfoCardBodyModal">
+      <p class="peDescriptionInfoModal" [innerHTML]="model.description"></p>
+    </div>
+    <div class="peKeyPadsInfoModal">
+      <button class="peButtonInfoCancelModal" nbButton (click)="ref.close()">CANCELAR</button>
+      <button class="peButtonInfoDangerModal" status="danger" nbButton [innerHTML]="model.btnConfirmation?model.btnConfirmation:'ELIMINAR'" (click)="ref.close()"></button>
+  </div>
+  </div>

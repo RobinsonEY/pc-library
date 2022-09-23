@@ -1,0 +1,81 @@
+table {
+  width: 100%;
+  border-style: hidden;
+  background-color: transparent;
+}
+
+th > div {
+  margin-right: 5px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+td.mat-cell:first-of-type,
+th.mat-header-cell:first-of-type {
+  padding-left: 0 !important;
+}
+
+@mixin table-name {
+  min-width: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  text-align: center;
+}
+@mixin table-color-standar {
+  background-color: #eef1f6;
+  color: #212942;
+}
+.no-borders {
+  border-bottom: none !important;
+}
+.header {
+  padding: 5px;
+  background: transparent;
+  align-items: center;
+  text-align: center;
+
+  &--title {
+    font-size: 14px;
+    margin-left: 2px;
+    .mat-form-field {
+      width: 100%;
+    }
+    &--standar {
+      @include table-name;
+      @include table-color-standar;
+    }
+    &--name {
+      @include table-name;
+      @include table-color-standar;
+      max-width: 80px;
+    }
+    &--double {
+      @include table-name;
+      @include table-color-standar;
+      max-width: 80px;
+      max-height: 80px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &--success {
+      @include table-name;
+      background-color: green;
+      color: white;
+    }
+
+    &--superior {
+      @include table-name;
+      background-color: #d3d8e2;
+      color: #212942;
+      text-align: center;
+    }
+    &--search {
+      max-width: 80px;
+    }
+  }
+}

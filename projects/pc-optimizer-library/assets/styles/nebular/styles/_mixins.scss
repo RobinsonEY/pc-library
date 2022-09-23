@@ -1,0 +1,54 @@
+@mixin font-size($size) {
+    font-size: $size !important;
+}
+
+@mixin pricing-engine-bold($fontsize) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    @include font-size($fontsize)    
+}
+
+@mixin pricing-engine-italic($fontsize) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    @include font-size($fontsize)    
+}
+
+@mixin pricing-engine-light($fontsize) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    @include font-size($fontsize)    
+}
+
+
+@mixin pricing-engine-reg($fontsize) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    @include font-size($fontsize)    
+}
+
+@mixin pricing-engine-semi-bold($fontsize) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    @include font-size($fontsize)    
+}

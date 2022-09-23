@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PcOptimizerLibraryComponent } from './pc-optimizer-library.component';
+import { ButtonIconComponent } from './button-icon.component';
 
-describe('PcOptimizerLibraryComponent', () => {
-  let component: PcOptimizerLibraryComponent;
-  let fixture: ComponentFixture<PcOptimizerLibraryComponent>;
+fdescribe('ButtonIconComponent', () => {
+  let component: ButtonIconComponent;
+  let fixture: ComponentFixture<ButtonIconComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PcOptimizerLibraryComponent ]
+      declarations: [ ButtonIconComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PcOptimizerLibraryComponent);
+    fixture = TestBed.createComponent(ButtonIconComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

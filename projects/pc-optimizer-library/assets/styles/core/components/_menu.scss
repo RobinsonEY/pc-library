@@ -1,0 +1,53 @@
+@import "nebular_theme";
+
+.menu-item:has(> .expanded){
+    
+    :first-child{
+        &[href='#']{
+            background-color: rgba(229, 233, 241, 0.3);
+        }
+    }
+    ul li a{
+        font-family: 'Open Sans';
+        font-style: normal; 
+        font-weight: 400;
+        line-height: 20px;
+        color: #919CB1;
+
+        &.active, &:hover{
+            font-weight: 600;
+            //line-height: 16px;
+            color: #1C9795!important;
+        }
+    }       
+}
+
+.menu-item:has(> .collapsed){
+    
+    :first-child{
+        &[href='#']{
+            background-color: #FFFFFF;
+        }
+    }
+    ul li a{
+        font-family: 'Open Sans';
+        font-style: normal; 
+        font-weight: 400;
+        line-height: 20px;
+        color: #919CB1;
+    }       
+}
+
+.menu-item > a.active{
+    color: #1C9795!important;  
+    nb-icon{
+        color: #1C9795!important;
+    }
+}
+
+.menu-item:hover >a{
+    color: #1C9795!important;
+    nb-icon{
+        color: #1C9795!important;
+    }
+}

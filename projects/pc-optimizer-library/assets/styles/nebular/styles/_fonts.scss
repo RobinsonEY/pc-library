@@ -1,0 +1,113 @@
+@import "mixins";
+
+@font-face {
+    font-family: 'PrincingEngine-Bold';
+    src: url('/src/assets/fonts/PrincingEngine-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PrincingEngine-Italic';
+    src: '/src/assets/fonts/PrincingEngine-Bold.ttf';
+}
+
+@font-face {
+    font-family: 'PrincingEngine-Light';
+    src: url('/src/assets/fonts/PrincingEngine-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PrincingEngine-Regular';
+    src: url('/src/assets/fonts/PrincingEngine-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PrincingEngine-SemiBold';
+    src: url('/src/assets/fonts/PrincingEngine-Bold.ttf');
+}
+
+
+// Princing Engine Bold
+.pe-bold-10 {
+    @include pricing-engine-bold(10px);
+}
+.pe-bold-12 {
+    @include pricing-engine-bold(12px);
+}
+.pe-bold-14 {
+    @include pricing-engine-bold(14px);
+}
+.pe-bold-16 {
+    @include pricing-engine-bold(16px);
+}
+.pe-bold-24 {
+    @include pricing-engine-bold(24px);
+}
+
+// Princing Engine Italic
+.pe-italic-12 {
+    @include pricing-engine-italic(12px);
+}
+.pe-italic-14 {
+    @include pricing-engine-italic(14px);
+}
+.pe-italic-24 {
+    @include pricing-engine-italic(24px);
+}
+
+// Princing Engine Light
+.pe-light-12 {
+    @include pricing-engine-light(12px);
+}
+.pe-light-14 {
+    @include pricing-engine-light(14px);
+}
+.pe-light-24 {
+    @include pricing-engine-light(24px);
+}
+
+// Princing Engine Regular
+.pe-reg-10 {
+    @include pricing-engine-reg(10px);
+}
+.pe-reg-12 {
+    @include pricing-engine-reg(12px);
+}
+.pe-reg-14 {
+    @include pricing-engine-reg(14px);
+}
+.pe-reg-16 {
+    @include pricing-engine-reg(16px);
+}
+.pe-reg-20 {
+    @include pricing-engine-reg(20px);
+}
+.pe-reg-24 {
+    @include pricing-engine-reg(24px);
+}
+.pe-reg-30 {
+    @include pricing-engine-reg(30px);
+}
+
+// Princing Engine SemiBold
+.pe-semibold-10 {
+    @include pricing-engine-reg(10px);
+}
+.pe-semibold-12 {
+    @include pricing-engine-semi-bold(12px);
+}
+.pe-semibold-14 {
+    @include pricing-engine-semi-bold(14px);
+}
+.pe-semibold-16 {
+    @include pricing-engine-semi-bold(16px);
+}
+.pe-semibold-20 {
+    @include pricing-engine-semi-bold(20px);
+}
+.pe-semibold-24 {
+    @include pricing-engine-semi-bold(24px);
+}
+.pe-semibold-30 {
+    @include pricing-engine-semi-bold(30px);
+}
+

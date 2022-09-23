@@ -1,0 +1,20 @@
+@import "nebular_theme";
+
+$nb-themes: nb-register-theme(
+  (
+    checkbox-basic-checked-background-color: #3C96F7,
+    checkbox-basic-hover-checked-background-color: #3C96F7,
+    checkbox-basic-focus-checked-background-color: #3C96F7,
+    checkbox-basic-border-color:#D3D8E2,
+    checkbox-basic-checked-border-color:#D3D8E2,
+    checkbox-basic-focus-checked-border-color:#D3D8E2,
+    checkbox-basic-background-color: #F8F9FE,
+    checkbox-basic-hover-background-color: #F8F9FE,
+    checkbox-basic-hover-border-color:#D3D8E2,
+    checkbox-basic-active-border-color:#D3D8E2,
+    checkbox-basic-focus-border-color:#D3D8E2,
+    checkbox-basic-hover-checked-border-color:#D3D8E2,
+  ),
+  default,
+  default
+);

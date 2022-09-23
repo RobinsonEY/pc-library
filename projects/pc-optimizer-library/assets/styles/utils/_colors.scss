@@ -1,0 +1,14 @@
+@import '../core/variables/color';
+
+$bg-colors: (
+  "white": $white
+);
+
+@each $name, $color in $bg-colors {
+  .u-color-#{$name} {
+    color: $color;
+  }
+  .u-bg-#{$name} {
+    background-color: $color;
+  }
+}

@@ -1,0 +1,39 @@
+@import "nebular_theme";
+
+
+nb-toggle {
+    .toggle-label {
+      .toggle {
+        .toggle-switcher {
+          margin-top: 5px;
+          width: 1.3rem;
+          height: 1.3rem;
+        }
+      }
+    }
+  }
+
+  
+$nb-themes: nb-register-theme(
+  (
+    toggle-switcher-icon-size:0rem,
+    toggle-switcher-size:1.35rem,
+    toggle-basic-checked-background-color:#6F7189,
+    toggle-basic-focus-checked-background-color:#6F7189,
+    toggle-basic-checked-switcher-background-color: #FFFFFF,
+    toggle-basic-checked-switcher-checkmark-color: #FFFFFF,
+    toggle-basic-hover-checked-background-color:#6F7189,
+    toggle-basic-hover-background-color: rgba(143, 155, 179, .16),
+    toggle-basic-text-color: #9DA0B8,
+
+    toggle-success-checked-background-color:#27acaa,
+    toggle-success-focus-checked-background-color:#27acaa,
+    toggle-success-checked-switcher-background-color: #FFFFFF,
+    toggle-success-checked-switcher-checkmark-color: #FFFFFF,
+    toggle-success-hover-checked-background-color:#27acaa,
+    toggle-success-hover-background-color: rgba(143, 155, 179, .16),
+
+  ),
+  default,
+  default
+);

@@ -1,0 +1,8 @@
+  <nb-card status="info" class="peCardModal">
+    <nb-card-body class="peCardBodyModal">
+      <img class="peImgModal" [src]="model.img" alt="img">
+      <h6 class="peTitleModal" [innerText]="model.title"></h6>
+      <p class="peDescriptionModal" [innerHTML]="model.description"></p>
+      <button class="peButtonModal" status="basic" nbButton [innerHTML]="model.btnTxt?model.btnTxt:'ENTENDIDO'" (click)="ref.close()"></button>
+    </nb-card-body>
+  </nb-card>

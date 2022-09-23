@@ -1,0 +1,27 @@
+@import "nebular_theme";
+
+$nb-themes: nb-register-theme(
+  (
+    //SUCCESS
+    toastr-success-background-color:#5CD393,
+    toastr-icon-success-color:#5CD393,
+    toastr-success-border-color:#5CD393,
+
+    //ERROR
+    toastr-danger-background-color:#EC5073,
+    toastr-icon-danger-color:#EC5073,
+    toastr-danger-border-color:#EC5073,
+
+    //WARNING
+    toastr-warning-background-color:#F4AC3D,
+    toastr-icon-warning-color:#F4AC3D,
+    toastr-warning-border-color:#F4AC3D,
+
+    //INFO
+    toastr-info-background-color:#3C96F7,
+    toastr-icon-info-color:#3C96F7,
+    toastr-info-border-color:#3C96F7,
+  ),
+  default,
+  default
+);

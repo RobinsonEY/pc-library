@@ -1,0 +1,62 @@
+$title-color: #212942;
+$title-font-size: 16px;
+@mixin header-title {
+  font-size: $title-font-size;
+  font-weight: bold;
+  padding: 0;
+  border:none;
+  background-color:rgba(0, 0,0,0);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  @include header-title;
+}
+
+.card-title{
+  @include header-title;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: $title-color;
+}
+
+.filtros {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  > div {
+    margin-right: 20px;
+  }
+
+  &--prioridades {
+    @extend .filtros;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+    &--select {
+      flex-grow: 1;
+      margin-right: 20px;
+      max-width: 260px;
+    }
+  }
+  &--input {
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  &--principal--select {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+}
+
+.nb-theme-default nb-menu .menu-item > .menu-items > .menu-item a {
+  flex-flow: row-reverse;
+}
+
+.menu-item nb-badge {
+  margin-right: 10px;
+}

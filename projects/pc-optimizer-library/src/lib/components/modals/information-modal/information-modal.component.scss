@@ -1,0 +1,66 @@
+.peInfoCardModal{
+    width: 400px;
+    min-height: 256px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+}
+
+.peTitleInfoModal{
+    background-color: #D8DDE6;
+    color: #212942;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    min-height: 64px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding-left: 30px;
+}
+
+.peInfoCardBodyModal{
+    text-align: center;
+    padding: 0px;
+    margin-top: 26px;
+    padding-inline: 30px;
+    margin-bottom: 30px;
+}
+
+.peDescriptionInfoModal{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #6F7189;
+    text-align: left;
+    min-height: 62px;
+}
+
+.peKeyPadsInfoModal{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-top: 1px solid #E5E9F1;
+    padding-inline: 30px;
+}
+
+.peButtonInfoCancelModal{
+    width: 100px!important;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    color: #212942!important;
+    background-color: #EEF1F6!important;
+}
+
+.peButtonInfoDangerModal{
+    width: 100px!important;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    color: #FFFFFF!important;
+    background-color: #EC5073!important;
+}

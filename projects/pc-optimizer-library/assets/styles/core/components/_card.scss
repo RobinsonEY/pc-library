@@ -1,0 +1,22 @@
+@import "nebular_theme";
+
+nb-card-body {
+    --card-scrollbar-width: .5rem;
+    --card-scrollbar-color: #ced4da;
+}
+
+.peCard {
+    .peCardHeader {
+        background-color: #212942;
+        color: #FFFFFF;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    .peCardBody {}
+
+    .peCardFooter {}
+}

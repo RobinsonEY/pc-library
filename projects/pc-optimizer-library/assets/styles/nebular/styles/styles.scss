@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+@import "_fonts.scss";
+@import '_mixins';
+
+// themes - our custom or/and out of the box themes
+@import "themes";
+@import "_template-table";
+@import "_template-header";
+@import "_template-content";
+// framework component themes (styles tied to theme variables)
+@import "~@nebular/theme/styles/globals";
+@import "~@nebular/auth/styles/globals";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/grid";
+
+@import "./material/angular-material";
+
+// loading progress bar theme
+@import "./pace.theme";
+
+@import "./layout";
+@import "./overrides";
+@import "./material/material-overrides";
+
+
+// install the framework and custom global styles
+@include nb-install() {
+  @include angular-material();
+
+  // framework global styles
+  @include nb-theme-global();
+  @include nb-auth-global();
+
+  @include ngx-layout();
+  // loading progress bar
+  @include ngx-pace-theme();
+
+  @include nb-overrides();
+  @include material-overrides();
+}
+
+html,
+body {
+  height: 100%;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', "Helvetica Neue", sans-serif;
+}
+
+
+.nb-theme-default .label {
+  font-size: 11px;
+}
+
+.small-width {
+  max-width: 125px;
+}
+
+.medium-width {
+  max-width: 175px;
+}
+
+.large-width {
+  max-width: 220px;
+}
+
+.extra-large-width {
+  max-width: 275px;
+}
+
+@media (max-width: 725px) {
+  .small-width {
+    max-width: 100%;
+    width: 45%;
+  }
+
+  .medium-width {
+    max-width: 100%;
+    width: 45%;
+  }
+
+  .large-width {
+    max-width: 100%;
+    width: 45%;
+  }
+
+  .extra-large-width {
+    max-width: 100%;
+    width: 45%;
+  }
+}
+
+.cdk-global-scrollblock {
+  position: static !important;
+  scrollbar-width: thin;
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #C8D6DE;
+    border-radius: 2px;
+  }
+}
+
+.label {
+  font-size: 0.85rem;
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+[nbInput].status-basic {
+  background-color: white;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.status-basic:disabled {
+  color: #212942 !important;
+  background-color: #EDEFF2 !important;
+  border-color: #EDEFF2 !important;
+}
+
+
+.logo-EY {
+  position: fixed;
+  width: 43px;
+  bottom: 10px;
+  left: 7px;
+}
+
+.scrollable {
+  margin-bottom: 50px;
+}
+
+.swal2-actions {
+  .show-error-message {
+    margin: 0;
+  }
+
+  .swal2-styled.swal2-confirm.show-error-button {
+    color: #242C43;
+    font-size: 11px;
+    font-weight: 700;
+    background-color: #EEF1F6;
+    margin-top: -1vh;
+    padding: 1.5vh 1vw;
+    border: 1px solid #EEF1F6;
+  }
+}
+
